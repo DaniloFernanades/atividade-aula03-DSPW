@@ -92,7 +92,9 @@ const livros = require('./biblioteca');
 
 
 // Sua vez
-const criarCartoesDeLivros = () => livros.map((livro) => cosnt {titulo, autor} = livro);
+const criarCartoesDeLivros = () => livros.map(({titulo, autor, anoPublicacao}) => 
+    `Titulo: ${titulo} | Autor: ${autor} | Ano: ${anoPublicacao}`
+);
   
 // Teste da Atividade 5
 console.log('\n--- Atividade 5: Cartões de Apresentação dos Livros ---');
