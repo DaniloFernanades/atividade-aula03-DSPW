@@ -9,14 +9,14 @@ const livros = require('./biblioteca');
 // ------------------------------------------------------------------------
 
 // Sua vez
-//function encontrarLivrosPorGenero(genero) {
-//    return livros.filter((livro) => livro.genero = genero);
-//}
+function encontrarLivrosPorGenero(genero) {
+    return livros.filter((livro) => livro.genero = genero);
+}
 
 // Teste da Atividade 1
-//console.log('--- Atividade 1: Livros de Ficção Científica (Função Tradicional) ---');
-//const livrosDeFiccao = encontrarLivrosPorGenero('Ficção Científica');
-//console.log(livrosDeFiccao);
+console.log('--- Atividade 1: Livros de Ficção Científica (Função Tradicional) ---');
+const livrosDeFiccao = encontrarLivrosPorGenero('Ficção Científica');
+console.log(livrosDeFiccao);
 
 
 // ------------------------------------------------------------------------
@@ -27,13 +27,13 @@ const livros = require('./biblioteca');
 
 
 // Sua vez
-//const encontrarLivrosPorGeneroArrow = genero => livros.filter((livro) => livro.genero == genero);
+const encontrarLivrosPorGeneroArrow = genero => livros.filter((livro) => livro.genero = genero);
 
 
 // Teste da Atividade 2
-//console.log('\n--- Atividade 2: Livros de Distopia (Arrow Function) ---');
-//const livrosDeDistopia = encontrarLivrosPorGeneroArrow('Distopia');
-//console.log(livrosDeDistopia);
+console.log('\n--- Atividade 2: Livros de Distopia (Arrow Function) ---');
+const livrosDeDistopia = encontrarLivrosPorGeneroArrow('Distopia');
+console.log(livrosDeDistopia);
 
 
 // ------------------------------------------------------------------------
@@ -45,13 +45,13 @@ const livros = require('./biblioteca');
 
 
 // Sua vez
-//const obterApenasTitulos = () => livros.map((livro) => livro.titulo)
+const obterApenasTitulos = () => livros.map((livro) => livro.titulo)
 
 
 // Teste da Atividade 3
-//console.log('\n--- Atividade 3: Lista de todos os títulos ---');
-//const todosOsTitulos = obterApenasTitulos();
-//console.log(todosOsTitulos);
+console.log('\n--- Atividade 3: Lista de todos os títulos ---');
+const todosOsTitulos = obterApenasTitulos();
+console.log(todosOsTitulos);
 
 
 // ------------------------------------------------------------------------
@@ -65,14 +65,14 @@ const livros = require('./biblioteca');
 
 
 // Sua vez
-//const livrosDeAutorAposAno = (autor, ano) => livros.filter((livro) => livro.autor == autor && livro.anoPublicacao > ano);
+const livrosDeAutorAposAno = (autor, ano) => livros.filter((livro) => livro.autor == autor && livro.anoPublicacao > ano);
 
 
 
 // Teste da Atividade 4
-//console.log('\n--- Atividade 4: Livros de J.R.R. Tolkien publicados após 1950 ---');
-//const livrosTolkienPos1950 = livrosDeAutorAposAno('J.R.R. Tolkien', 1950);
-//console.log(livrosTolkienPos1950);
+console.log('\n--- Atividade 4: Livros de J.R.R. Tolkien publicados após 1950 ---');
+const livrosTolkienPos1950 = livrosDeAutorAposAno('J.R.R. Tolkien', 1950);
+console.log(livrosTolkienPos1950);
 
 
 
